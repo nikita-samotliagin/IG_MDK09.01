@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Мудборд — Конференции.РФ</title>
+<style>
+@font-face { font-family: "PT Sans"; src: url(assets/PTSans-Regular.woff2); }
+@font-face { font-family: "PT Sans"; src: url(assets/PTSans-Bold.woff2); font-weight: 700; }
+@font-face { font-family: "PT Sans"; src: url(assets/PTSans-Italic.woff2); font-style: italic; }
+@font-face { font-family: "PT Serif"; src: url(assets/PTSerif-Bold-cyr.woff2); font-weight: 700; unicode-range: U+0400-045F, U+2116; }
+@font-face { font-family: "PT Serif"; src: url(assets/PTSerif-Bold-lat.woff2); font-weight: 700; unicode-range: U+0000-00FF, U+2013-2014; }
+:root { --blue:#007bff; --navy:#0d47a1; --gray:#6c757d; --bg:#f8f9fa; --white:#fff; }
+* { box-sizing: border-box; }
+body { margin: 0; width: 1600px; padding: 36px; background: #e9eef4; font: 16px/1.45 "PT Sans", sans-serif; color: #1d2733; }
+.board { display: grid; grid-template-columns: 1.25fr 1fr 1fr; grid-template-rows: auto auto auto; gap: 18px; }
+.tile { background: var(--white); border-radius: 10px; overflow: hidden; border: 1px solid #d6dee8; }
+.pad { padding: 22px; }
+h2 { margin: 0 0 12px; font: 700 13px "PT Sans"; letter-spacing: .12em; text-transform: uppercase; color: var(--gray); }
+.title { grid-column: 1 / 2; background: var(--navy); color: var(--white); display: flex; flex-direction: column; justify-content: space-between; }
+.title h1 { font: 700 52px/1.05 "PT Serif", serif; margin: 0 0 14px; }
+.title p { color: #cfe3ff; margin: 0; font-size: 18px; }
+.title .logo { display: flex; align-items: center; gap: 12px; font-size: 22px; }
+.title .logo b { color: #8cc4ff; }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.big { grid-row: span 2; }
+.words { display: flex; flex-wrap: wrap; gap: 10px; }
+.words span { padding: 8px 16px; border-radius: 999px; border: 2px solid var(--navy); color: var(--navy); font-weight: 700; }
+.words span.f { background: var(--navy); color: #fff; }
+.pal { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.sw { border-radius: 8px; height: 92px; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px; font-size: 13px; border: 1px solid #d6dee8; }
+.sw b { font-size: 15px; }
+.extra { display: flex; gap: 8px; margin-top: 10px; font-size: 13px; color: var(--gray); align-items: center; }
+.dot { width: 18px; height: 18px; border-radius: 50%; display: inline-block; }
+.font-a { font: 700 64px/1 "PT Serif", serif; color: var(--navy); }
+.font-b { font-size: 40px; font-weight: 700; color: var(--navy); line-height: 1; }
+.spec { display: flex; gap: 28px; align-items: flex-end; margin-bottom: 10px; }
+.spec small { display: block; font-size: 13px; color: var(--gray); margin-top: 6px; font-style: italic; }
+.ui { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.btn { display: inline-flex; align-items: center; height: 44px; padding: 0 20px; border-radius: 8px; background: var(--blue); color: #fff; font-weight: 700; border: 2px solid var(--blue); }
+.btn.h { background: var(--navy); border-color: var(--navy); }
+.btn.g { background: transparent; color: var(--blue); }
+.badge { padding: 3px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.input { width: 100%; height: 44px; border: 1px solid #c3ccd6; border-radius: 8px; padding: 0 12px; display: flex; align-items: center; color: var(--gray); }
+.input.err { border-color: #c62828; background: #fffafa; color: #1d2733; }
+.errt { color: #c62828; font-size: 12px; }
+.row { display: grid; grid-template-columns: 40px 1fr 110px 140px; gap: 10px; padding: 10px 12px; border: 1px solid #dde3ea; border-radius: 8px; font-size: 14px; align-items: center; width: 100%; }
+.side { display: flex; gap: 10px; }
+.side .m { width: 150px; background: var(--navy); border-radius: 8px; padding: 10px; color: #dbe8ff; font-size: 13px; }
+.side .m div { padding: 7px 8px; border-radius: 6px; }
+.side .m .a { background: #fff; color: var(--navy); font-weight: 700; }
+.stars { color: #f0a500; font-size: 22px; letter-spacing: 3px; }
+.note { font-size: 13px; color: var(--gray); margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div class="board">
+    <div class="tile pad title">
+        <div class="logo"><img src="assets/logo-192.png" width="48" height="48" alt=""><span>Конференции<b>.РФ</b></span></div>
+        <div>
+            <h1>Деловое пространство<br>для Всероссийских<br>конференций</h1>
+            <p>Мудборд дизайн-концепции · Самотлягин, 4ИСП9-45</p>
+        </div>
+    </div>
+    <div class="tile photo big"><img src="assets/hero.webp" alt=""></div>
+    <div class="tile photo"><img src="assets/auditorium.webp" alt=""></div>
+
+    <div class="tile pad">
+        <h2>Ключевые слова</h2>
+        <div class="words">
+            <span class="f">Надёжность</span><span>Уверенность</span><span class="f">Порядок</span>
+            <span>Светлые залы</span><span>Деловой тон</span><span class="f">Ясность</span><span>Простор</span>
+        </div>
+        <p class="note">Ориентир — «общая концепция надёжности и уверенности» из руководства заказчика. Строгие линии, много воздуха, без декоративного шума.</p>
+    </div>
+    <div class="tile photo"><img src="assets/coworking.webp" alt=""></div>
+
+    <div class="tile pad">
+        <h2>Цветовая схема заказчика</h2>
+        <div class="pal">
+            <div class="sw" style="background:#007bff;color:#fff"><b>#007bff</b>кнопки, ссылки</div>
+            <div class="sw" style="background:#0d47a1;color:#fff"><b>#0d47a1</b>меню, заголовки</div>
+            <div class="sw" style="background:#6c757d;color:#fff"><b>#6c757d</b>подписи</div>
+            <div class="sw" style="background:#f8f9fa"><b>#f8f9fa</b>фон</div>
+            <div class="sw" style="background:#fff"><b>#ffffff</b>панели</div>
+        </div>
+        <div class="extra">Служебные: <span class="dot" style="background:#b26a00"></span>#b26a00 <span class="dot" style="background:#2e7d32"></span>#2e7d32 <span class="dot" style="background:#c62828"></span>#c62828 <span class="dot" style="background:#f0a500"></span>#f0a500</div>
+    </div>
+    <div class="tile pad">
+        <h2>Шрифтовая пара</h2>
+        <div class="spec">
+            <div><div class="font-a">Аа 2027</div><small>PT Serif Bold — акцент: баннер, цифры</small></div>
+            <div><div class="font-b">Аа Бб</div><small>PT Sans — весь интерфейс</small></div>
+        </div>
+        <p class="note">Обе гарнитуры из одной суперсемьи ParaType «PT»: одинаковые пропорции и кириллица, контраст засечек.</p>
+    </div>
+    <div class="tile photo"><img src="assets/cinema.webp" alt=""></div>
+
+    <div class="tile pad" style="grid-column: 1 / 3">
+        <h2>Элементы интерфейса</h2>
+        <div class="ui" style="margin-bottom:14px">
+            <span class="btn">Отправить</span><span class="btn h">Наведение</span><span class="btn g">Мои заявки</span>
+            <span class="badge" style="background:#e3f0ff;color:#007bff">Новая</span>
+            <span class="badge" style="background:#fff2dc;color:#b26a00">Мероприятие назначено</span>
+            <span class="badge" style="background:#e6f4e7;color:#2e7d32">Завершено</span>
+            <span class="stars">★★★★☆</span>
+        </div>
+        <div class="ui" style="flex-wrap:nowrap; gap:18px; align-items:flex-start">
+            <div style="flex:1"><div class="input">8(___)___-__-__</div><div class="note">Формат 8(XXX)XXX-XX-XX</div></div>
+            <div style="flex:1"><div class="input err">ivan</div><div class="errt">Только латиница и цифры, не менее 6 символов</div></div>
+            <div class="row" style="flex:2"><b>3</b><span><b>Цифровая экономика — 2027</b></span><span>Аудитория</span><span class="badge" style="background:#e6f4e7;color:#2e7d32;justify-self:start">Завершено</span></div>
+        </div>
+    </div>
+    <div class="tile pad">
+        <h2>Навигация</h2>
+        <div class="side">
+            <div class="m"><div>Помещения</div><div class="a">Мои заявки</div><div>Новая заявка</div><div>Личный кабинет</div></div>
+            <p class="note" style="margin:0">Боковое тёмно-синее меню на ПК, выезжающее — на смартфоне. Активный пункт — белая «плашка».</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+{
+  "checked_at": "2026-10-23T10:27:55.650Z",
+  "browsers": [
+    {
+      "name": "chromium",
+      "version": "153.0.8010.0",
+      "pages": [
+        {
+          "name": "home",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 0
+        },
+        {
+          "name": "register",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 5
+        },
+        {
+          "name": "applications",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 0
+        },
+        {
+          "name": "new",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 4
+        },
+        {
+          "name": "profile",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 0
+        },
+        {
+          "name": "admin",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366
+        },
+        {
+          "mode": "desktop",
+          "js_errors": []
+        },
+        {
+          "name": "home",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 0
+        },
+        {
+          "name": "register",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 5
+        },
+        {
+          "name": "applications",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 0
+        },
+        {
+          "name": "new",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 4
+        },
+        {
+          "name": "profile",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 0
+        },
+        {
+          "name": "admin",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "mode": "mobile",
+          "js_errors": []
+        }
+      ]
+    },
+    {
+      "name": "firefox",
+      "version": "153.0",
+      "pages": [
+        {
+          "name": "home",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 0
+        },
+        {
+          "name": "register",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 5
+        },
+        {
+          "name": "applications",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 0
+        },
+        {
+          "name": "new",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 4
+        },
+        {
+          "name": "profile",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366,
+          "field_errors": 0
+        },
+        {
+          "name": "admin",
+          "mode": "desktop",
+          "width": 1366,
+          "scrollWidth": 1366
+        },
+        {
+          "mode": "desktop",
+          "js_errors": []
+        },
+        {
+          "name": "home",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 0
+        },
+        {
+          "name": "register",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 5
+        },
+        {
+          "name": "applications",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 0
+        },
+        {
+          "name": "new",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 4
+        },
+        {
+          "name": "profile",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390,
+          "field_errors": 0
+        },
+        {
+          "name": "admin",
+          "mode": "mobile",
+          "width": 390,
+          "scrollWidth": 390
+        },
+        {
+          "mode": "mobile",
+          "js_errors": []
+        }
+      ]
+    }
+  ]
+}
